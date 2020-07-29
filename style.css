@@ -1,0 +1,112 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(29, 28,28);
+    color: red;
+}
+*{
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    /* we give padding in left and right because content in middle, left and right have white space. */
+    padding: 0 1rem;
+    padding-top: 1rem;
+}
+.top-bar{
+    height: 55px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}    
+.btn-container{
+    width: 11rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn{
+    display: block;
+    border: none;
+    background-color: rgb(156,153,153);
+    height: 80%;
+    width: 40%;
+    border-radius: 5px;
+}
+.new{
+    color: black;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+.tab-container{
+    border: 1px solid;
+    width: calc(100vw - 14rem);
+}
+
+
+.container{
+    height: calc(100vh - (2rem + 55px));
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+.file-explorer{
+    width: 30%;
+    height: 100%;
+    border: 1px solid; 
+    /* color we have given to *, so it will therefore be in white color by default */
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 3px;
+    /* //for horizontal scrollbar */
+    height: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 3 px;
+}
+::-webkit-scrollbar-track{
+    /* //give the background to scrollbar black */
+    /* border of the scrollbar */
+    border: 1px solid rgb(17,17, 17); 
+    /* border: 1px solid yellow; */
+    /* background color of the scrollbar */
+    background-color: rgba(36, 34, 34, 0.562);
+    /* background-color: red; */
+}
+.main-container{
+    display: flex;
+    width: 68%;
+    height: 100%;
+    background-color: rebeccapurple;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.editor-container{
+    height: 68%;
+    border: 1px solid;
+}
+#code-editor{
+    height: 100%;
+    /* overflow: auto; */
+}
+.tab{
+    height: 90%;
+    min-width: 70px;
+    background-color: rgb(82, 79, 79);
+    margin-right: 4px;
+}
+.tab-container{
+    display: flex;
+    align-items: center;
+}
+.fa-items{
+    font-size: 60%;
+}
+.terminal-container{
+    height: 28%;
+    border: 1px solid;
+}
